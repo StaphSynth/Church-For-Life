@@ -24,6 +24,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
+#excerpt_separator: <!--more-->
+
 # Build settings
 markdown: kramdown
 

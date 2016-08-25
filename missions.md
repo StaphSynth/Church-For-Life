@@ -10,4 +10,4 @@ We go places and preach!
 
 <hr>
 
-{% include listGenerator.html cat="missions" %}
+{% include listGenerator.html cat="missions" printEx=true %}
