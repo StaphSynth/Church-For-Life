@@ -1,0 +1,21 @@
+{% comment %}
+  Used for generating lists of blog posts to be displayed on the site.
+  Can be configured to list only posts of a certain category. If no specific category is req'd, don't pass it anything.
+  Usage: {% include listGenerator.html cat="your_category_value_here" listLength=number_of_posts_to_display %}
+{% endcomment %}
+
+<ul class="postList">
+  {% if include.cat == null %}
+    {% for post in site.posts limit: include.listLength %}
+      {% if post.url %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% for post in site.posts limit: include.listLength %}
+      {% if post.category == include.cat %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</ul>
