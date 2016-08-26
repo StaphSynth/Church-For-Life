@@ -4,7 +4,7 @@
   {% for event in events %}
       {% assign postStartDate = event.when | date: '%s' %}
       {% if postStartDate >= curDate %}
-        <li><a href="{{ event.url }}">{{ event.when | date_to_long_string }} - {{ event.title }}</a></li>
+        <li><h3><a href="{{ event.url }}">{{ event.when | date_to_long_string }} - {{ event.title }}</a></h3></li>
       {% endif %}
   {% endfor %}
 </ul>

@@ -79,47 +79,88 @@ a:visited {
   color: inherit;
 }
 
-body {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: stretch;
+#pageContainer {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 1024px;
+	margin: 0 auto;
 }
+
+/*==================================================
+FONTS
+===================================================*/
+
+header h1, #mainMenu,
+#contentContainer h2,
+#contentContainer h3 {
+	font-family: 'Salsa', cursive;
+}
+
+header h3  {
+	font-family: 'Tangerine', cursive;
+}
+
+#contentContainer p,
+.keepReading,
+footer {
+	font-family: 'Lato', sans-serif;
+}
+
 
 /*==================================================
 HEADER
 ===================================================*/
 
 header {
-  background-color: aqua;
+  /*background-color: #127725;*/
+	background-color: darkgreen;
 }
 
 header h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 0.5rem ;
+  padding: 0.5rem;
+	color: #32241e;
+	/*text-shadow: 1px 1px 2px #000;*/
+
+
 }
 
 header h3 {
   text-align: center;
   padding-bottom: 0.5rem;
-font-style: italic;}
+  font-style: italic;
+	color: #32241e;
+	/*text-shadow: 1px 1px 1px #000;*/
+	font-size: 2rem;
+	font-weight: 600;
+}
 
 /*==================================================
 NAVIGATION
 ===================================================*/
 
+#mainMenu {
+	color: #32241e;
+	font-size: 1.25rem;
+}
+
 #mainMenu ul {
   display: none;
+	border-left: solid transparent 0.5rem;
+	border-right: solid transparent 0.5rem;
 }
 
 #navIcon a {
   display: block;
   padding: 0.5rem;
+	outline: 0;
 }
 
 #mainMenu ul li a {
   display: block;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 #mainMenu ul li:hover {
@@ -137,7 +178,15 @@ MAIN CONTENT
 
 #contentContainer {
   flex-grow: 1;
-  background-color: gainsboro;
+  background-color: #40c840;
+	color: #fff;
+	padding: 0.5rem;
+}
+
+.line {
+	margin: 1rem 0 0.5rem;;
+	border-top: solid 2px;
+	color: #083705;
 }
 
 #contentContainer h2 {
@@ -145,18 +194,45 @@ MAIN CONTENT
   padding: 0.5rem 0;
 }
 
+#latestContainer {
+	display: flex;
+	flex-direction: column;
+}
 
+#contentContainer h2 {
+	color: #083705;
+	text-shadow: 1px 1px 2px #444;
+
+
+}
+
+#contentContainer p {
+
+    font-family: 'Lato', sans-serif;
+
+}
+
+.postList h3 {
+	display: inline-block;
+}
 
 /*==================================================
 FOOTER
 ===================================================*/
 
 footer {
-  background: beige;
+  background: darkgreen;
+	color: #fff;
 }
 
 
 
 /*==================================================
 RESPONSIVE CSS
-===================================================*
+===================================================*/
+
+@media screen and (min-width: 1100px){
+	#latestContainer {
+		flex-direction: row;
+	}
+}
