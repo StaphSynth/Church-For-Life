@@ -32,3 +32,5 @@ markdown: kramdown
 collections:
   coming-up:
     output: true
+  people:
+    output: true

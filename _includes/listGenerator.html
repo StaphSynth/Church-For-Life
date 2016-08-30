@@ -10,14 +10,14 @@
   {% if include.cat == null %}
     {% for post in site.posts limit: include.listLength %}
       {% if post.url %}
-        <li><a href="{{ post.url }}"><h3>{{ post.title }}</h3>{% if include.printEx %} {{ post.excerpt }}<a class="keepReading" href="{{ post.url }}">Keep reading -></a>{% endif %}</a></li>
+        <li><a href="{{ post.url }}"><h3>{{ post.title }}</h3>{% if include.printEx %} {{ post.excerpt }}<a class="keepReading" href="{{ post.url }}">Keep reading <i class="fa fa-arrow-right"></i></a>{% endif %}</a></li>
       {% endif %}
     {% endfor %}
   {% else %}
     {% for post in site.posts limit: include.listLength %}
       {% if post.category == include.cat %}
         {% if post.url %}
-          <li><a href="{{ post.url }}"><h3>{{ post.title }}</h3>{% if include.printEx %} {{ post.excerpt }}<a class="keepReading" href="{{ post.url }}">Keep reading -></a>{% endif %}</a></li>
+          <li><a href="{{ post.url }}"><h3>{{ post.title }}</h3>{% if include.printEx %} {{ post.excerpt }}<a class="keepReading" href="{{ post.url }}">Keep reading <i class="fa fa-arrow-right"></i></a>{% endif %}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}

@@ -85,6 +85,9 @@ a:visited {
 	flex-direction: column;
 	max-width: 1024px;
 	margin: 0 auto;
+	/*border: solid 3px #32241e;*/
+	/*border-radius: 15px;*/
+	/*opacity: 0.85;*/
 }
 
 /*==================================================
@@ -93,7 +96,9 @@ FONTS
 
 header h1, #mainMenu,
 #contentContainer h2,
-#contentContainer h3 {
+#contentContainer h3,
+.person.namePosition p,
+#contentContainer .share p {
 	font-family: 'Salsa', cursive;
 }
 
@@ -107,6 +112,11 @@ footer {
 	font-family: 'Lato', sans-serif;
 }
 
+#contentContainer .namePosition p {
+	font-family: 'Salsa', cursive;
+	padding: 0;
+}
+
 
 /*==================================================
 HEADER
@@ -115,26 +125,48 @@ HEADER
 header {
   /*background-color: #127725;*/
 	background-color: darkgreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	/*opacity: 0.85;*/
+	background: rgba(0, 100, 0, 0.75)
+}
+
+header {
+	/*text-shadow: 0px 0px 1px #ddd;*/
+	color: #32241e;
+	/*font-weight: bold;*/
 }
 
 header h1 {
   font-size: 2rem;
   text-align: center;
   padding: 0.5rem;
-	color: #32241e;
+	/*color: #32241e;*/
+	/*color: #083705;*/
 	/*text-shadow: 1px 1px 2px #000;*/
-
-
 }
 
 header h3 {
   text-align: center;
   padding-bottom: 0.5rem;
   font-style: italic;
-	color: #32241e;
+	/*color: #083705;*/
 	/*text-shadow: 1px 1px 1px #000;*/
 	font-size: 2rem;
 	font-weight: 600;
+}
+
+header #headerContainer {
+text-align: center;
+}
+
+header #headerContainer div {
+	display: inline-block;
+}
+
+header #cross {
+	font-size: 5rem;
+	/*color: #083705;*/
 }
 
 /*==================================================
@@ -144,6 +176,7 @@ NAVIGATION
 #mainMenu {
 	color: #32241e;
 	font-size: 1.25rem;
+	font-weight: bold;
 }
 
 #mainMenu ul {
@@ -164,11 +197,13 @@ NAVIGATION
 }
 
 #mainMenu ul li:hover {
-  background-color: green;
+  /*background-color: green;*/
+	background: rgba(0, 128, 0, 0.75);
 }
 
 .selected {
-  background-color: green;
+  /*background-color: green;*/
+	background: rgba(0, 128, 0, 0.75);
 }
 
 
@@ -176,22 +211,24 @@ NAVIGATION
 MAIN CONTENT
 ===================================================*/
 
+body {
+	background-image: url("../img/eucalypts.jpg");
+	/*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(60, 200, 64, 1) 100%), url('../img/eucalypts.jpg') no-repeat;*/
+}
+
 #contentContainer {
   flex-grow: 1;
-  background-color: #40c840;
+  /*background-color: #40c840;*/
+	background: rgba(64, 200, 64, 0.75);
 	color: #fff;
 	padding: 0.5rem;
 }
 
-.line {
-	margin: 1rem 0 0.5rem;;
-	border-top: solid 2px;
-	color: #083705;
-}
-
 #contentContainer h2 {
-  font-size: 1.25rem;
-  padding: 0.5rem 0;
+  font-size: 1.33rem;
+  padding: 0.5rem 0 0.25rem;
+	color: #32241e;
+	font-weight: bold;
 }
 
 #latestContainer {
@@ -199,33 +236,207 @@ MAIN CONTENT
 	flex-direction: column;
 }
 
-#contentContainer h2 {
+#contentContainer {
+	/*text-align: center;*/
+}
+
+#contentContainer h3 {
+	font-size: 1.125rem;
 	color: #083705;
-	text-shadow: 1px 1px 2px #444;
-
-
+	margin: 0.5rem 0 0.25rem;
 }
 
 #contentContainer p {
-
-    font-family: 'Lato', sans-serif;
-
+	padding: 0.25rem 0;
+	text-align: justify;
 }
 
-.postList h3 {
+#contentContainer img {
+	display: block;
+	margin: 0 auto;
+}
+
+.keepReading {
+	color: #083705!important;
+	margin-left: 0.75rem;
+}
+
+#contentContainer .postList h3 {
 	display: inline-block;
+	margin: 0;
 }
+
+.postList li {
+	margin: 0.75rem 0;
+}
+
+.separator {
+	margin: 0.5rem 0;
+	border-top: solid 2px #32241e;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/*******************
+THE TEAM STYLING
+*******************/
+
+.person {
+	margin: 0.75rem 0;
+}
+
+.person img {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+}
+
+.teamHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.namePosition p {
+	color: #083705!important;
+}
+
+.namePosition {
+	margin-left: 0.5rem;
+}
+
+#contentContainer .namePosition .name {
+	font-size: 1.25rem;
+	padding-bottom: 0.25rem;;
+}
+
+.namePosition .position {
+	font-size: 1.125rem;
+	padding: 0;
+}
+
+
+/*******************
+SHARE DIV
+*******************/
+
+.share {
+  text-align: center;
+	border-top: solid 1px #083705;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+
+#contentContainer .share p {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #083705;
+}
+
+.share ul li {
+	padding: 0;
+}
+
+.share ul li a {
+	display: block;
+	padding: 0.75rem;
+}
+
+.share .fa {
+	font-size: 2.5rem;
+}
+
+
+/*******************
+CONTACT PAGE
+*******************/
+
+.contactList li {
+	margin: 0.75rem 0;
+}
+
+#contentContainer .contactWrapper {
+	display: flex;
+	font-size: 1.125rem;
+	align-items: center;
+}
+
+#contentContainer .contact-icons {
+	font-size: 2rem;
+}
+
+#contentContainer .contactWrapper div {
+	margin-right: 0.75rem;
+}
+
+#contentContainer .contactWrapper p {
+	text-align: left;
+}
+
+/*Google map location service*/
+#map-canvas {
+	max-width: 550px;
+	height: 400px;
+	display: block;
+	margin: 0 2em;
+}
+
+
 
 /*==================================================
 FOOTER
 ===================================================*/
 
 footer {
-  background: darkgreen;
+  /*background: darkgreen;*/
+	background: rgba(0, 100, 0, 0.75);
 	color: #fff;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	text-align: center;
+	padding: 0.5rem;
 }
 
+footer p {
+	font-size: 1.25rem;
+}
 
+footer div {
+	padding: 0.5rem;
+}
+
+footer div~div {
+	border-top: solid 1px #083705;
+}
+
+.social li {
+	display: inline-block;
+	font-size: 2.5rem;
+}
+
+.social li a {
+	display: block;
+	padding: 0.75rem;
+}
+
+footer p a {
+	color: #32241e!important;
+	font-weight: bolder;
+}
+
+footer p a:hover {
+	text-decoration: underline;
+}
+
+footer div.legal p {
+	font-size: 1rem;
+}
 
 /*==================================================
 RESPONSIVE CSS

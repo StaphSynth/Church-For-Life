@@ -6,8 +6,8 @@ navId: 20
 
 ## Missions
 
-We go places and preach!
+The church funds missions both at home and abroad, preaching the word.
 
-<hr>
+<div class="separator"></div>
 
 {% include listGenerator.html cat="missions" printEx=true %}

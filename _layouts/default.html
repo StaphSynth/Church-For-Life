@@ -1,5 +1,11 @@
 <html>
   <head>
+    <title>{% if page.url == "/" %}
+              Church For Life
+            {% else %}
+              {{ page.title | append: " | Church For Life" }}
+            {% endif %}
+    </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
@@ -10,8 +16,15 @@
     <div id="pageContainer">
       <header>
         <noscript><div id="noscript">JavaScript is turned off. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> for full use of this site.</div></noscript>
-        <h1>Church For Life</h1>
-        <h3>Glorifying God - Growing people</h3>
+        <div id="headerContainer">
+          <div id="cross">
+            &#x271d;
+          </div>
+          <div>
+            <h1>Church For Life</h1>
+            <h3>Glorifying God - Growing people</h3>
+          </div>
+        </div> <!-- /headerContainer -->
         <nav id="mainMenu">
           <div id="navIcon">
             <a href="#"><i class="fa fa-bars"></i> Menu</a>
@@ -39,7 +52,21 @@
         {{ content }}
       </div>
       <footer>
-        <p>This is a footer</p>
+        <div>
+          <p>Come and <a href="{{ site.url }}/contact.html">worship with us <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+        </div>
+        <div>
+          <p>Connect with us:</p>
+          <ul class="social">
+            <li><a href=""><i class="fa fa-twitter-square" aria-hidden="false"></i></a></li>
+            <li><a href=""><i class="fa fa-facebook-square" aria-hidden="false"></i></a></li>
+            <li><a href=""><i class="fa fa-rss-square" aria-hidden="false"></i></a></li>
+          </ul>
+        </div>
+        <div class="legal">
+          <p>&copy; 2016 Church For Life Incorporated.</p>
+          <p>Site by <a href="">D. Allen</a></p>
+        </div>
       </footer>
     </div> <!-- /pageContainer -->
   </body>

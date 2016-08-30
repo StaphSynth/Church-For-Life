@@ -8,7 +8,7 @@ navId: 10
 
 This is an introductory paragraph telling readers this is the website of a church. Yada yada yada. Placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text. End of paragraph.
 
-<div class="line"></div>
+<div class="separator"></div>
 
 <div id="latestContainer">
   <div id="news">
