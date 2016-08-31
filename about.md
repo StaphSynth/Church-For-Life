@@ -24,13 +24,13 @@ In this way we hope to influence the world in which we live and remain strong in
 
 In short, we are a group of believers who look to the Holy Spirit for the power to do what we are each called to do in a world that appears to have lost its way. We corporately Glorify God and provide a safe place where He is Growing People. We hold true to the basic tenants of the protestant christian creeds and strive to be living examples of Christ.
 
-<div class="separator"></div>
+<!-- <div class="separator"></div> -->
 
 ## The Team
 
 Church for life is run by a close-knit team with years of experience doing... er... whatever it is that they do (look, I'm just a web developer, okay? ;)
 
-<ul>
+<ul id="teamList">
   {% assign people = site.people | sort: 'rank' %}
   {% for person in people %}
     <li class="person">

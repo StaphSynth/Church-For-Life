@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: upcoming
 title: Easter
-when: 2017-04-12
+start: 2017-04-16
 ---
 
-## Easter service
-
-The usual: Songs, lectures and crap tea and coffee afterwards...
+A special celebration of the resurrection!

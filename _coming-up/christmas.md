@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: upcoming
 title: Christmas
-when: 2016-12-24
+start: 2016-12-24
 ---
 
-## Christmas Service
-
-We're sure you have better things to do than turn up to church on Christmas day, but we're organising a service anyway...
+To celebrate the birth of our lord, we're holding a special service at 11:00am on Christmas day. We hope you can be there!

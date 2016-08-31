@@ -2,6 +2,7 @@
 layout: post
 title: Hello World!
 category: general
+author: D. Allen
 ---
 
 This is an example paragraph. Text was placed here using a keyboard and fingers. Heh, they call them fingers, but I ain't never seem 'em fing. So anyway, that's about it for this paragraph.

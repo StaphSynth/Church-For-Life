@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: upcoming
 title: More...
-when: 2016-10-11
+start: 2016-10-11
 ---
 
-## Blah
-
-blah blah blah
+More placeholder text here...

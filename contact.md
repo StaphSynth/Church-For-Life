@@ -6,25 +6,26 @@ navId: 60
 
 ## Contact Us
 
-<ul class="contactList">
-	<li><h3>Services</h3></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-clock-o contact-icons" aria-hidden="false"></i></div><div><p>Sundays, 10:00am</p></div></div></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-map-signs contact-icons" aria-hidden="false"></i></div><div><p>19 Kilvington Drive, Emerald</p></div></div></li>
-</ul>
+<div id="contactContainer">
+	<ul class="contactList">
+		<li><h3>Services</h3></li>
+		<li><div class="contactItem"><div><i class="fa fa-clock-o contact-icons" aria-hidden="false"></i></div><div><p>Sundays, 10:00am</p></div></div></li>
+		<li><div class="contactItem"><div><i class="fa fa-map-signs contact-icons" aria-hidden="false"></i></div><div><p>19 Kilvington Drive, Emerald, VIC</p></div></div></li>
+	</ul>
 
-<ul class="contactList">
-	<li><h3>Church Office</h3></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-phone contact-icons" aria-hidden="false"></i></div><div><p>PHONE NUMBER</p></div></div></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-envelope contact-icons" aria-hidden="false"></i></div><div><p>Church For Life PO Box 307, Emerald, Victoria, 3782</p></div></div></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-envelope contact-icons" aria-hidden="false"></i></div><div><p>inquiries@churchforlife.com.au</p></div></div></li>
-</ul>
+	<ul class="contactList">
+		<li><h3>Pastor Mal Doswell</h3></li>
+		<li><div class="contactItem"><div><i class="fa fa-phone contact-icons" aria-hidden="false"></i></div><div><p>0425 777 462</p></div></div></li>
+		<li><div class="contactItem"><div><i class="fa fa-envelope contact-icons" aria-hidden="false"></i></div><div><p>psmaldoswell@churchforlife.com.au</p></div></div></li>
+	</ul>
 
-<ul class="contactList">
-	<li><h3>Pastor Mal Doswell</h3></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-phone contact-icons" aria-hidden="false"></i></div><div><p>0425 777 462</p></div></div></li>
-	<li><div class="contactWrapper"><div><i class="fa fa-envelope contact-icons" aria-hidden="false"></i></div><div><p>psmaldoswell@churchforlife.com.au</p></div></div></li>
-</ul>
-
+	<ul class="contactList">
+		<li><h3>Church Office</h3></li>
+		<li><div class="contactItem"><div><i class="fa fa-phone contact-icons" aria-hidden="false"></i></div><div><p>PHONE NUMBER</p></div></div></li>
+		<li><div class="contactItem"><div><i class="fa fa-envelope contact-icons" aria-hidden="false"></i></div><div><p>Church For Life PO Box 307, Emerald, Victoria, 3782</p></div></div></li>
+		<li><div class="contactItem"><div><i class="fa fa-envelope contact-icons" aria-hidden="false"></i></div><div><p>inquiries@churchforlife.com.au</p></div></div></li>
+	</ul>
+</div> <!-- /contactContainer -->
 
 
 ### Location
